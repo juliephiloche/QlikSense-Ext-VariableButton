@@ -59,61 +59,61 @@ define(["jquery","qlik"], function($, qlik) {
 									label: "5"
 								}],
 						},
-                        
                         usevariable4 : {
                           label : "Button Values",
                           ref : "button_value_block",
-                          settings: {
-								uses: "settings",
-                            	
-                                    items : {
-                      			        			    
-                      					buttonvalue1p : {
-											ref : "buttonvalue1",
-											expression:"optional",
-											label : "Button value 1",
-											type : "string",
-											defaultValue : "1"
-                                        },
-                                        buttonvalue2p : {
-											ref : "buttonvalue2",
-											expression:"optional",
-											label : "Button value 2",
-											type : "string",
-											defaultValue : "2"
-                                        },
-                                        buttonvalue3p : {
-											ref : "buttonvalue3",
-											expression:"optional",
-											label : "Button value 3",
-											type : "string",
-											defaultValue : "3"
-                                        },
-                                        buttonvalue4p : {
-											ref : "buttonvalue4",
-											expression:"optional",
-											label : "Button value 4",
-											type : "string",
-											defaultValue : "4"
-                                        },
-                                        buttonvalue5p : {
-											ref : "buttonvalue5",
-											expression:"optional",
-											label : "Button value 5",
-											type : "string",
-											defaultValue : "5"
-                                        }
-                                    }
-                          }
+						  type: "items",
+                          items: {
+								//uses: "settings",
+								//items : {
+                      			    			    
+                      				buttonvalue1p : {
+										ref : "buttonvalue1",
+										expression:"optional",
+										label : "Button value 1",
+										type : "string",
+										defaultValue : "1"
+                                   },
+                                   buttonvalue2p : {
+										ref : "buttonvalue2",
+										expression:"optional",
+										label : "Button value 2",
+										type : "string",
+										defaultValue : "2"
+                                   },
+                                   buttonvalue3p : {
+										ref : "buttonvalue3",
+										expression:"optional",
+										label : "Button value 3",
+										type : "string",
+										defaultValue : "3"
+                                   },
+                                   buttonvalue4p : {
+										ref : "buttonvalue4",
+										expression:"optional",
+										label : "Button value 4",
+										type : "string",
+										defaultValue : "4"
+                                   },
+                                   buttonvalue5p : {
+										ref : "buttonvalue5",
+										expression:"optional",
+										label : "Button value 5",
+										type : "string",
+										defaultValue : "5"
+                                   }
+                               //}
+							}
                         },
                       
 						usevariable3 : {
                           label : "Button Names",
                           ref : "button_names_block",
-                          settings: {
-								uses: "settings",
-                            	
-                                    items : {
+						  type: "items",
+                          items: {
+								//uses: "settings",
+                            	//type: "items",
+                                //    items : {
                       			        			    
                       					buttonname1p : {
 											ref : "buttonname1",
@@ -152,7 +152,7 @@ define(["jquery","qlik"], function($, qlik) {
                                         }
                         
                                     }
-                          },
+							//},
                         
                         
    
